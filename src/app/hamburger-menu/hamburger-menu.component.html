@@ -1,0 +1,11 @@
+<div id="wrapper"
+     (click)="clickMenu()">
+  <div class="circle icon ripple">
+    <div [class]="classButton + ' top'"
+         [ngClass]="close ? 'top-close' : ''"></div>
+    <div [class]="classButton + ' middle'"
+         [ngClass]="close ? 'middle-bottom-close' : ''"></div>
+    <div [class]="classButton + ' bottom'"
+         [ngClass]="close ? 'middle-bottom-close' : ''"></div>
+  </div>
+</div>

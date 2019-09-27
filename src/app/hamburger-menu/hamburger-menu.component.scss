@@ -1,0 +1,42 @@
+$circle-radio: 20px;
+#wrapper {
+  background: #0d6fba;
+  display: inline-block;
+  border-radius: 500px;
+  margin: calc(#{$circle-radio} * 10 / 100);
+  position: relative;
+  padding: calc(#{$circle-radio}  / 2);
+  cursor: pointer;
+}
+
+.circle {
+  width: $circle-radio;
+  height: $circle-radio;
+  position: relative;
+}
+.line {
+  position: absolute;
+  height: calc(#{$circle-radio} * 10 / 100);
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+}
+.top {
+  top: 18%;
+}
+.middle {
+  top: 48%;
+}
+.bottom {
+  top: 78%;
+}
+.top-close {
+  transform: rotate(45deg);
+  top: 48%;
+}
+
+.middle-bottom-close {
+  transform: rotate(-45deg);
+  top: 48%;
+}
